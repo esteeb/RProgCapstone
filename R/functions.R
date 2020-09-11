@@ -33,7 +33,7 @@ eq_data_read <- function(filename) {
   if(!file.exists(filename))
     stop("file '", filename, "' does not exist")
   data <- suppressMessages({
-    readr::read_delim(filename, delim='\t',progress = FALSE)
+    readr::read_delim(filename, delim='\t', progress = FALSE, header = TRUE, fill = TRUE)
   })
   dplyr::tbl_df(data)
 

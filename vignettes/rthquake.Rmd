@@ -21,7 +21,7 @@ library(rthquake)
 
 ## Read and Clean Data Example
 
-The NOAA Earthquakes Data File can be downloaded from the NOAA site; it is not included in the package due to its size to help with installation times.  
+The NOAA Earthquakes Data File can be downloaded from the NOAA site or in the /data/ folder of the package.  
 
 The eq_clean_data() function generates a datetime column, converts to numeric data a set of columns, and uses the eq_location_clean function to remove the Country from the LOCATION_NAME column for a better look.
 
